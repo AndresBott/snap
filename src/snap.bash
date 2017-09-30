@@ -56,12 +56,12 @@ Usage :
 command -v import >/dev/null 2>&1 || { echo >&2 "import, provided by imagemagic is required but it's not installed.  Aborting."; exit 1; }
 
 
-main_config="/etc/snap.conf"
+main_config="/etc/snap.bash.conf"
 if [ -f $main_config ]; then
     . $main_config
 fi
 
-user_config="~/.config/snap.conf"
+user_config="~/.config/snap.bash.conf"
 user_config=$(expandPath $user_config)
 
 if [ -f $user_config ]; then
