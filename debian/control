@@ -1,0 +1,13 @@
+Package: snap
+Version: 0.1.0
+Maintainer: Andres Bott <contact@andresbott.com>
+Homepage: andresbott.com
+Priority: optional
+Depends: imagemagick
+Conflicts: myscripts
+Recommends: 
+Architecture: all
+Tag: interface::commandline,  andresbott
+Description: bash wrapper for imagemagick import to take screenshots like on macos
+ this package provides a bash wrapper for imagemagick import to take screenshots like on macos
+

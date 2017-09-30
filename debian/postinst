@@ -1,0 +1,28 @@
+#!/bin/bash
+# postinst script
+#
+#
+
+
+
+## declare an array variable
+arr=(
+"/usr/local/bin/findText"
+"/usr/local/bin/findBrokenSymLinks"
+"/usr/local/bin/audio/audio2mp3"
+"/usr/local/bin/getPublicIp"
+"/usr/local/bin/nginxensite"
+)
+
+## now loop through the above array
+for i in "${arr[@]}"
+do
+   echo "$i"
+    chown root:root "$i"
+    chmod 755 "$i"
+done
+
+
+
+
+
