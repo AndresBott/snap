@@ -3,15 +3,10 @@
 #
 #
 
-
-
 ## declare an array variable
 arr=(
-"/usr/local/bin/findText"
-"/usr/local/bin/findBrokenSymLinks"
-"/usr/local/bin/audio/audio2mp3"
-"/usr/local/bin/getPublicIp"
-"/usr/local/bin/nginxensite"
+"/usr/local/bin/snap.bash"
+"/etc/snap.conf/snap.conf"
 )
 
 ## now loop through the above array

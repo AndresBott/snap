@@ -1,3 +1,3 @@
-# myScripts
-Collection of my own script i use from time to time
+# snap
+bash wrapper for imagemagick import to take screenshots like on macos
 
