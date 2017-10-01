@@ -210,7 +210,7 @@ r=$(import $PARAMS "$OUTPUT/$new_filename.png")
 
 FileLocation="/usr/local/share/snap.bash/shutter.wav"
 
-if [ "PLAYSOUND" = "true" ]; then
+if [ "$PLAYSOUND" = "true" ]; then
     r1=`play $FileLocation`
 fi
 
