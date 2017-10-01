@@ -6,7 +6,9 @@
 ## declare an array variable
 arr=(
 "/usr/local/bin/snap.bash"
-"/etc/snap.conf/snap.bash.conf"
+"/usr/local/bin/snap.bash.s"
+"/usr/local/bin/snap.bash.w"
+"/etc/snap.bash.conf"
 )
 
 ## now loop through the above array

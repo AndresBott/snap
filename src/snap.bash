@@ -177,6 +177,16 @@ PARAMS=""
 
 snap_type="${TYPE}"
 
+
+
+ScriptName="$(basename "$0")"
+
+if [ "$ScriptName" = "snap.bash.w" ]; then
+    snap_type="w"
+elif [ "$ScriptName" = "snap.bash.s" ]; then
+    snap_type="s"
+fi
+
 if [ "$snap_type" = "w" ]; then
     PARAMS="$PARAMS"" -screen"
 elif [ "$snap_type" = "s" ]; then
@@ -198,6 +208,10 @@ PARAMS="$(echo -e "${PARAMS}" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//
 
 r=$(import $PARAMS "$OUTPUT/$new_filename.png")
 
+FileLocation="/usr/local/share/snap.bash/shutter.wav"
 
+if [ "PLAYSOUND" = "true" ]; then
+    r1=`play $FileLocation`
+fi
 
 
